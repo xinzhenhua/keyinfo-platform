@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyInfo智囊线索 - 置业顾问专属副业平台</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+    <div class="container">
+        <div class="row justify-content-center vh-100 align-items-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="login-card animate__animated animate__fadeIn">
+                    <div class="login-card-header">
+                        <div class="brand-logo mb-4">
+                            <div class="logo-icon"><i class="bi bi-gem"></i></div>
+                            <h2>Key<span class="keyinfo-gradient-text">Info</span></h2>
+                            <span class="tagline">智囊线索</span>
+                        </div>
+                        <p class="text-center">置业顾问专属副业平台，佣金外快一单双赚！</p>
+                    </div>
+                    <div class="login-card-body">
+                        <div id="login-form">
+                            <div class="floating-input mb-4">
+                                <input type="text" class="form-control luxury-input" id="username" placeholder=" " required>
+                                <label for="username">用户名</label>
+                                <div class="input-icon"><i class="bi bi-person"></i></div>
+                            </div>
+                            <div class="floating-input mb-4">
+                                <input type="password" class="form-control luxury-input" id="password" placeholder=" " required>
+                                <label for="password">密码</label>
+                                <div class="input-icon"><i class="bi bi-lock"></i></div>
+                            </div>
+                            <div class="d-grid gap-3">
+                                <button class="btn btn-primary luxury-btn" id="login-btn" type="button">
+                                    <span>登 录</span>
+                                    <div class="btn-overlay"></div>
+                                </button>
+                                <button class="btn btn-gold" id="register-toggle" type="button">
+                                    <span>注册新账号</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div id="register-form" style="display: none;">
+                            <div class="floating-input mb-4">
+                                <input type="text" class="form-control luxury-input" id="reg-username" placeholder=" " required>
+                                <label for="reg-username">用户名</label>
+                                <div class="input-icon"><i class="bi bi-person"></i></div>
+                            </div>
+                            <div class="floating-input mb-4">
+                                <input type="password" class="form-control luxury-input" id="reg-password" placeholder=" " required>
+                                <label for="reg-password">密码</label>
+                                <div class="input-icon"><i class="bi bi-lock"></i></div>
+                            </div>
+                            <div class="floating-input mb-4">
+                                <input type="password" class="form-control luxury-input" id="reg-password-confirm" placeholder=" " required>
+                                <label for="reg-password-confirm">确认密码</label>
+                                <div class="input-icon"><i class="bi bi-shield-lock"></i></div>
+                            </div>
+                            <div class="floating-input mb-4">
+                                <select class="form-select luxury-input" id="reg-role" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="agent">业务员</option>
+                                    <option value="admin">管理员</option>
+                                </select>
+                                <label for="reg-role">角色</label>
+                                <div class="input-icon"><i class="bi bi-person-badge"></i></div>
+                            </div>
+                            <div class="floating-input mb-4" id="admin-code-field" style="display: none;">
+                                <input type="text" class="form-control luxury-input" id="admin-code" placeholder=" ">
+                                <label for="admin-code">管理员验证码</label>
+                                <div class="input-icon"><i class="bi bi-key"></i></div>
+                            </div>
+                            <div class="d-grid gap-3">
+                                <button class="btn luxury-btn" id="register-btn" type="button">
+                                    <span>注 册</span>
+                                    <div class="btn-overlay"></div>
+                                </button>
+                                <button class="btn btn-outline-secondary" id="login-toggle" type="button">
+                                    <span>返回登录</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-footer text-center mt-4">
+                    <p class="text-muted small">© 2025 KeyInfo智囊线索 · 高端客户引流平台</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LeanCloud SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html> 
